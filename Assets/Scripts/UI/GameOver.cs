@@ -5,8 +5,10 @@ using UnityEngine;
 public class GameOver : MonoBehaviour {
 
     public GameObject gameOverPanel;
-	
-	void Start () {
+
+    
+
+    void Start () {
         GameState.Instance.ListenState(GameState.State.GameOver,OnGameOver);
 	}
 	

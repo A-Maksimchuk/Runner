@@ -88,5 +88,17 @@ public class SwapZone : MonoBehaviour, IPointerDownHandler, IEndDragHandler, IDr
         }
     }
 
-    
+    //Управление стрелками для редактора
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+            onLeftSwap.Invoke();
+        if (Input.GetKeyDown(KeyCode.RightArrow))
+            onRightSwap.Invoke();
+        if (Input.GetKeyDown(KeyCode.UpArrow))
+            onUpSwap.Invoke();
+        if (Input.GetKeyDown(KeyCode.DownArrow))
+            onDownSwap.Invoke();
+    }
+
 }

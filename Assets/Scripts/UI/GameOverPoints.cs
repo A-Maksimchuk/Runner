@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Runner;
 
 public class GameOverPoints : MonoBehaviour {
 
